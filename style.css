@@ -1,72 +1,136 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root {
+    --pding-pp: 0px;
+    --gap-between: 10px;
+}
+
 * {
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
 
 body {
-    background-color: rgb(187, 190, 192);
-    overflow: scroll;
+    background-color: rgb(216, 216, 216);
     display: flex;
-    flex-direction: row;
-
+    height: 100vh;
+    margin: 0;
 }
+
 .container {
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 2px solid;
+    border: 0px solid;
+    min-height: 100vh;
     padding: 20px;
 }
 
 .row {
     display: flex;
-    border: 2px solid ;
-    padding: 10px;
+    border: 0px solid;
     flex-direction: column;
+    padding: var(--pding-pp); 
+    gap: var(--gap-between);
+    font-size: small;
 }
 
 .row2 {
     display: flex;
-    border: 2px solid ;
-    padding: 10px;
+    border: 0px solid;
     flex-direction: column;
+    padding: var(--pding-pp);
+    gap: var(--gap-between);
+    font-size: small;
+
 }
 
 form {
+    font-size: small;
+    width: 100%;
+    max-width: 500px;
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-direction: row;
-    gap: 2rem;
+    gap: 4rem;
     border-radius: 30px;
-    padding: 30px;
+    padding: 20px;
     background-color: rgb(236, 236, 236);
 }
 
- p,h2  {
+p, h2 {
     text-align: center;
 }
 
-img {
-    border: 2px solid;
-    height: 50em;
-    width: 50em;
+h2 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+p {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-size: small;
+}
+
+.img {
+    flex: 1;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
 }
 
 button {
-    margin-top: 10px;
-    border: 1px solid ;
-    border-radius: 20px;
+    margin-top: 15px;
+    border: 1px solid;
+    border-radius: 10px;
     padding: 10px;
     text-align: center;
     width: 10rem;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(22, 28, 28);
+    color: white;
 }
 
 button:hover {
-    background-color: rgb(245, 244, 244);
+    background-color: rgb(46, 61, 52);
+}
 
+button:active {
+    background-color: rgb(84, 112, 86);
+}
+
+input {
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    margin-top: -10px;
+    font-size: small;
+    background-color: rgb(236, 236, 236);
+}
+
+.txt {
+    margin-top: 10px;
+    font-size: small;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+input:focus {
+    outline: none;
+    border: 1px solid rgb(0, 0, 0);
 }
