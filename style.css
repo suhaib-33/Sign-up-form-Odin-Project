@@ -157,8 +157,6 @@ input:focus {
     border-color: green;
 }
 
-
-
 /* MOBILE FIX */
 @media (max-width: 768px) {
     body {
